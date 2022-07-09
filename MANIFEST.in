@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include beyouiris *.css
+recursive-include beyouiris *.csv
+recursive-include beyouiris *.html
+recursive-include beyouiris *.ico
+recursive-include beyouiris *.js
+recursive-include beyouiris *.json
+recursive-include beyouiris *.md
+recursive-include beyouiris *.png
+recursive-include beyouiris *.py
+recursive-include beyouiris *.svg
+recursive-include beyouiris *.txt
+recursive-exclude beyouiris *.pyc
