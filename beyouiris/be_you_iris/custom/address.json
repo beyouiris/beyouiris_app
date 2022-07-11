@@ -1,0 +1,32 @@
+{
+ "custom_fields": [],
+ "custom_perms": [],
+ "doctype": "Address",
+ "property_setters": [
+  {
+   "_assign": null,
+   "_comments": null,
+   "_liked_by": null,
+   "_user_tags": null,
+   "creation": "2022-07-10 00:02:55.250812",
+   "default_value": null,
+   "doc_type": "Address",
+   "docstatus": 0,
+   "doctype_or_field": "DocField",
+   "field_name": "address_type",
+   "idx": 0,
+   "modified": "2022-07-10 00:02:55.250812",
+   "modified_by": "Administrator",
+   "name": "Address-address_type-default",
+   "owner": "Administrator",
+   "parent": null,
+   "parentfield": null,
+   "parenttype": null,
+   "property": "default",
+   "property_type": "Text",
+   "row_name": null,
+   "value": "Shop"
+  }
+ ],
+ "sync_on_migrate": 1
+}

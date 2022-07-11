@@ -9,6 +9,12 @@ app_color = "grey"
 app_email = "lovinmaxwell@gmail.com"
 app_license = "MIT"
 
+app_logo_url = '/assets/beyouiris/images/beyouiris-trans.png'
+# website_context = {
+# 	"favicon": 	"/assets/beyouiris/images/beyouiris-trans.png",
+# 	"splash_image": "/assets/beyouiris/images/beyouiris-trans.png"
+# }
+
 # Includes in <head>
 # ------------------
 

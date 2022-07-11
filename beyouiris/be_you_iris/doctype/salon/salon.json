@@ -1,0 +1,193 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:cr_no",
+ "creation": "2022-07-10 00:01:06.178207",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "cr_no",
+  "salon_name",
+  "salon_classification",
+  "primary_sales_person",
+  "column_break_6",
+  "social_media",
+  "primary_address_and_contact_detail_section",
+  "salon_primary_contact",
+  "mobile_no",
+  "email_id",
+  "column_break_21",
+  "salon_primary_address",
+  "primary_address",
+  "address_contacts",
+  "address_html",
+  "column_break_9",
+  "contact_html",
+  "actions_section",
+  "client_type",
+  "call_type",
+  "core_message",
+  "notes"
+ ],
+ "fields": [
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "cr_no",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "CR",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "salon_name",
+   "fieldtype": "Data",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Name",
+   "reqd": 1
+  },
+  {
+   "allow_in_quick_entry": 1,
+   "fieldname": "salon_classification",
+   "fieldtype": "Link",
+   "in_global_search": 1,
+   "in_list_view": 1,
+   "in_preview": 1,
+   "in_standard_filter": 1,
+   "label": "Classification",
+   "options": "Salon Classification",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_6",
+   "fieldtype": "Column Break",
+   "label": "Social Media"
+  },
+  {
+   "fieldname": "address_contacts",
+   "fieldtype": "Section Break",
+   "label": "Address and Contact",
+   "options": "fa fa-map-marker"
+  },
+  {
+   "fieldname": "address_html",
+   "fieldtype": "HTML",
+   "label": "Address HTML"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "contact_html",
+   "fieldtype": "HTML",
+   "label": "Contact HTML"
+  },
+  {
+   "fieldname": "social_media",
+   "fieldtype": "Table",
+   "options": "Salon Social Media"
+  },
+  {
+   "fieldname": "actions_section",
+   "fieldtype": "Section Break",
+   "label": "Actions"
+  },
+  {
+   "fieldname": "client_type",
+   "fieldtype": "Data",
+   "label": "Client Type"
+  },
+  {
+   "fieldname": "call_type",
+   "fieldtype": "Data",
+   "label": "Call Type"
+  },
+  {
+   "fieldname": "core_message",
+   "fieldtype": "Long Text",
+   "label": "Core Message"
+  },
+  {
+   "fieldname": "notes",
+   "fieldtype": "Small Text",
+   "label": "Notes"
+  },
+  {
+   "fieldname": "primary_address_and_contact_detail_section",
+   "fieldtype": "Section Break",
+   "label": "Primary Address and Contact Detail"
+  },
+  {
+   "fieldname": "salon_primary_contact",
+   "fieldtype": "Link",
+   "label": "Salon Primary Contact",
+   "options": "Contact"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Read Only",
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "email_id",
+   "fieldtype": "Read Only",
+   "label": "Email Id"
+  },
+  {
+   "fieldname": "column_break_21",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "salon_primary_address",
+   "fieldtype": "Link",
+   "label": "Salon Primary Address",
+   "options": "Address"
+  },
+  {
+   "fieldname": "primary_address",
+   "fieldtype": "Small Text",
+   "label": "Primary Address",
+   "read_only": 1
+  },
+  {
+   "fieldname": "primary_sales_person",
+   "fieldtype": "Link",
+   "label": "Primary Sales Person",
+   "options": "Sales Person",
+   "set_only_once": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2022-07-10 20:32:42.147863",
+ "modified_by": "Administrator",
+ "module": "Be You Iris",
+ "name": "Salon",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
