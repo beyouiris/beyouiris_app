@@ -4,7 +4,7 @@
 frappe.ui.form.on('Salon', {
 	refresh: function(frm) {
 		frm.toggle_display(['address_html','contact_html'], !frm.doc.__islocal);
-
+		frappe.dynamic_link = {doc: frm.doc, fieldname: 'name', doctype: 'Salon'}
 		if (frm.doc.__islocal) {
 			frm.set_df_property('address_and_contact', 'hidden', 1);
 			frappe.contacts.clear_address_and_contact(frm);

@@ -11,10 +11,12 @@
   "salon_name",
   "salon_classification",
   "primary_sales_person",
+  "disabled",
   "column_break_6",
   "social_media",
   "primary_address_and_contact_detail_section",
   "salon_primary_contact",
+  "primary_contact",
   "mobile_no",
   "email_id",
   "column_break_21",
@@ -164,11 +166,23 @@
    "label": "Primary Sales Person",
    "options": "Sales Person",
    "set_only_once": 1
+  },
+  {
+   "default": "0",
+   "fieldname": "disabled",
+   "fieldtype": "Check",
+   "label": "Disabled"
+  },
+  {
+   "fieldname": "primary_contact",
+   "fieldtype": "Small Text",
+   "label": "Primary Contact",
+   "read_only": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2022-07-10 20:32:42.147863",
+ "modified": "2022-07-11 22:30:27.938409",
  "modified_by": "Administrator",
  "module": "Be You Iris",
  "name": "Salon",
