@@ -12,28 +12,28 @@ class SalesVisit(Document):
 def get_events(start, end, filters=None):
 	events = []
 
-	sales_person = frappe.db.get_value("Sales Person", {"user": frappe.session.user})
+	sales_representative = frappe.db.get_value("Sales Representative", {"user": frappe.session.user})
 
-	# if not sales_person:
+	# if not sales_representative:
 	# 	return events
 
 	from frappe.desk.reportview import get_filters_cond
 	conditions = get_filters_cond("Sales Visit", filters, [])
-	add_sales_visit(events, start, end, conditions=conditions,sales_person = sales_person)
+	add_sales_visit(events, start, end, conditions=conditions,sales_representative = sales_representative)
 	return events
 
-def add_sales_visit(events, start, end, conditions=None,sales_person = None):
-	q_sales_person = ""
-	if sales_person:
-		q_sales_person = f"and sales_person = '{sales_person}'"
+def add_sales_visit(events, start, end, conditions=None,sales_representative = None):
+	q_sales_representative = ""
+	if sales_representative:
+		q_sales_representative = f"and sales_representative = '{sales_representative}'"
 	query = """select name, date, salon_name
 		from `tabSales Visit` where
 		date between %(from_date)s and %(to_date)s
-		%(sales_person)s"""
+		%(sales_representative)s"""
 	if conditions:
 		query += conditions
 
-	result = frappe.db.sql(query, {"from_date":start, "to_date":end, "sales_person":q_sales_person}, as_dict=True)
+	result = frappe.db.sql(query, {"from_date":start, "to_date":end, "sales_representative":q_sales_representative}, as_dict=True)
 	from beyouiris.utils import beYouLogger
 	beYouLogger.debug(result)
 

@@ -6,11 +6,11 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "sales_person",
+  "sales_representative",
   "salon",
   "date",
   "column_break_8",
-  "sales_person_name",
+  "sales_representative_name",
   "salon_name",
   "location_details_section",
   "latitude",
@@ -19,11 +19,11 @@
  ],
  "fields": [
   {
-   "fieldname": "sales_person",
+   "fieldname": "sales_representative",
    "fieldtype": "Link",
    "in_list_view": 1,
-   "label": "Sales Person",
-   "options": "Sales Person",
+   "label": "Sales Representative",
+   "options": "Sales Representative",
    "reqd": 1
   },
   {
@@ -65,10 +65,10 @@
    "fieldtype": "Column Break"
   },
   {
-   "fetch_from": "sales_person.first_name",
-   "fieldname": "sales_person_name",
+   "fetch_from": "sales_representative.first_name",
+   "fieldname": "sales_representative_name",
    "fieldtype": "Data",
-   "label": "Sales Person Name",
+   "label": "Sales Representative Name",
    "read_only": 1
   },
   {

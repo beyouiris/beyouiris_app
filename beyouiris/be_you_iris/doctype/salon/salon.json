@@ -10,7 +10,7 @@
   "cr_no",
   "salon_name",
   "salon_classification",
-  "primary_sales_person",
+  "primary_sales_representative",
   "disabled",
   "column_break_6",
   "social_media",
@@ -161,10 +161,10 @@
    "read_only": 1
   },
   {
-   "fieldname": "primary_sales_person",
+   "fieldname": "primary_sales_representative",
    "fieldtype": "Link",
-   "label": "Primary Sales Person",
-   "options": "Sales Person",
+   "label": "Primary Sales Representative",
+   "options": "Sales Representative",
    "set_only_once": 1
   },
   {

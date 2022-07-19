@@ -4,5 +4,5 @@
 # import frappe
 import unittest
 
-class TestSalesPerson(unittest.TestCase):
+class TestSalesRepresentative(unittest.TestCase):
 	pass
